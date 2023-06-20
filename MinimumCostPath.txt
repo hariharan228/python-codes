@@ -1,0 +1,22 @@
+Find the Minimum Cost path to reach the bottom right corner of the matrix from top right corner
+
+Say we have n rows and m columns. You have to start from top left (matrix[0][0]) and travel to bottom right (matrix[n-1][m-1]). You have to move 
+either right or down.
+
+Each cell in the matrix has cost, if you reach that cell, add that cost to the result variable and print the final output once the end is reached
+Remember you have to minimze the cost
+
+
+eg. 
+
+n = 3
+m = 3
+
+1 1 3
+0 5 5
+6 7 8
+
+For the above question, we anticipate to move from 1[0,0] -> 0[1,0] -> 5[1,1] -> 5[1,2] -> 8[2,2] (Cost = 1+0+5+5+8 = 19). 
+But the min cost path is 1[0,0] -> 1[0,1] -> 3[0,2] -> 5[2,1] -> 8[2,2] (Cost = 1+1+3+5+8 = 18)
+
+So choosing the smallest number always doesnot help us all the time. Think before framing the solution
